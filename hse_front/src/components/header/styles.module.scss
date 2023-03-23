@@ -1,0 +1,21 @@
+.wrapper {
+    flex: 0 0 72px;
+    width: 100%;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #262626;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.title {
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -2px;
+}

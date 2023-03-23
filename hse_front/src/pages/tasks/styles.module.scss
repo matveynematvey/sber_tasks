@@ -1,0 +1,23 @@
+@use '../../styles/constants.scss' as v;
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content {
+    width: v.$desktop-width;
+    height: 100vh;
+    overflow: hidden auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media all and (max-width: v.$pad-limit) {
+        width: v.$pad-width;
+    }
+}

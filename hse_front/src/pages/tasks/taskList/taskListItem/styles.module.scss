@@ -1,0 +1,46 @@
+.wrapper {
+    border: 1px solid #262626;
+    padding: 8px 16px;
+    border-radius: 12px;
+
+    & + .wrapper {
+        margin-top: 12px;
+    }
+
+    &_isDone {
+        & .name {
+            text-decoration: line-through;
+        }
+
+        & .desc {
+            text-decoration: line-through;
+        }
+    }
+}
+
+.header {
+    display: flex;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #262626;
+}
+
+.name {
+    font-size: 20px;
+    line-height: 28px;
+    flex: 1 1 auto;
+}
+
+.desc {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: pre-line;
+}
+
+.icon {
+    flex: 0 0 40px;
+
+    & + .icon {
+        margin-left: 12px;
+    }
+}
